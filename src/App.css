@@ -1,0 +1,15 @@
+
+.span-text{
+   color: rgba(75, 192, 192, 0.9)
+}
+.incorrect{
+    color: rgba(202, 52, 52, 0.9);
+    box-shadow: 0 4px 2px -2px rgb(255, 0, 0);
+}
+.correct{
+   color: rgba(0, 255, 0, 0.9)
+}
+.default{
+    
+   color: rgba(75, 192, 192, 0.9)
+}
