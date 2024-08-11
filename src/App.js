@@ -108,7 +108,7 @@ function App() {
         return () => {
             window.removeEventListener('keydown', handleKeyPress);
         };
-    }, [randomText, currentIndex]);
+    }, [randomText, currentIndex, handleKeyPress]);
 
     useEffect(() => {
         if (randomText) {
@@ -134,9 +134,6 @@ function App() {
 
     const createChartData = () => {
         const labels = inputData.map((data) => data.time);
-        const successData = inputData
-            .filter(data => data.status === 'correct')
-            .map(data => parseFloat(data.time));
 
         const errorData = inputData
             .filter(data => data.status === 'incorrect')
